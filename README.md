@@ -16,7 +16,7 @@ Credit to Josh Madakor for creating the lab [tutorial](https://youtu.be/MHsI8hJm
 
 <h2>Lab walk-through:</h2>
 
-<h3>Set up Environments</h3>
+<b>Step 1. Set up Environments</b>
 
 Set up Windows Server 2019 on Oracle VirtualBox using a Server 2018 ISO file.
 
@@ -35,10 +35,29 @@ The internal network does not have an IP address assigned to the internal NIC, w
 
 When we use Active Directory, DNS is automatically installed on the server. So we can either use the loopback address of 127.0.0.1 for the DNS Server Address or the IP address of the DC internal NIC which was just assigned above as 172.16.0.1. 
 
-
 [IMAGE]
 
 The internal NIC will be given a class B private IP address of 172.16.0.1 with a /16 subnet mask.
+
+<b>Step 2. Install Active Directory Domain Services</b>
+
+AD is installed using Server Manager/Add roles and features. The Root domain name is: mydomain.com
+
+[IMAGE]
+
+<b>Step 3. Set up Remote Access Server / Network Access Translation (RAS/NAT)</b>
+
+This will allow our Windows 10 clients on the internal network to access the internet through the DC.
+
+Set up RAS through the Server Manager/Add roles and features. Then set up NAT using the 'Tools' menu and selecting Routing and Remote Access.
+
+RAS/NAT set up is completed.
+
+[IMAGE]
+
+<b>Step 4. Set up DHCP</b>
+
+This will allow IP address assignment to local machines that join the network, allowing internet access.
 
 
 <p align="center">
