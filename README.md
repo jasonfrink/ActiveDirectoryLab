@@ -1,8 +1,10 @@
 <h1>Active Directory Home Lab</h1>
 
 <h2>Description</h2>
-This project guides users through setting up a VirtualBox home lab with Windows Server 2019, configured to run Active Directory (AD) and related network services. It includes installing VirtualBox, configuring network adapters, and setting up a Windows Server with AD Domain Services, DNS, and DHCP. The lab also covers creating a Windows 10 client and automating the bulk creation of AD users using PowerShell. This setup provides a hands-on environment to explore AD management, networking basics, and client-server interactions
+This project guides users through setting up a VirtualBox home lab with Windows Server 2019, configured to run Active Directory (AD) and related network services. It includes installing VirtualBox, configuring network adapters, and setting up a Windows Server with AD Domain Services, DNS, and DHCP. The lab also covers creating a Windows 10 client and automating the bulk creation of AD users using PowerShell. This setup provides a hands-on environment to explore AD management, networking basics, and client-server interactions.
 <br />
+
+- Credit to Josh Madakor for creating the lab [tutorial](https://youtu.be/MHsI8hJmggI?si=2hyOxmObgueOZa8P) on YouTube
 
 <h2>Environments Used </h2>
 
@@ -10,7 +12,10 @@ This project guides users through setting up a VirtualBox home lab with Windows 
 - <b>Windows Server 2019</b>
 - <b>Oracle VM VirtualBox</b>
 
-<h2>Program walk-through:</h2>
+<h2>Lab walk-through:</h2>
+
+
+
 
 <p align="center">
 Launch the utility: <br/>
