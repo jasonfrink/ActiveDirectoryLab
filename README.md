@@ -61,7 +61,7 @@ Set up RAS through the Server Manager/Add roles and features. Then set up NAT us
 
 RAS/NAT set up is completed.
 
-![Install RAS](https://github.com/user-attachments/assets/65e1bb5b-26bf-46fd-99b6-b6d1678fd584)
+<![Routing and Remote Access](https://github.com/user-attachments/assets/258b363d-231a-4023-a8ef-bf7cc0cada06) width="300"/>
 
 <b>Step 4. Set up DHCP</b>
 
