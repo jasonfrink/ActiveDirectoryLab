@@ -61,11 +61,36 @@ Set up RAS through the Server Manager/Add roles and features. Then set up NAT us
 
 RAS/NAT set up is completed.
 
-<img src="https://imgur.com/a/92RbOTf" height="80%" width="80%" alt="Routing and Remote Access"/>
+![Routing and Remote Access](https://github.com/user-attachments/assets/6cd270b1-9d02-4f49-a547-a4e929428f43)
 
 <b>Step 4. Set up DHCP</b>
 
-This will allow IP address assignment to local machines that join the network, allowing internet access.
+This will allow automatic IP address assignment to local machines that join the network, allowing internet access.
+
+Setting up DHCP using Server Manager. Tools menu --> select DHCP
+![dhcp setup](https://github.com/user-attachments/assets/ae679e25-1c92-4747-a984-7f3ad0c300e6)
+
+The scope of IP addresses that will be used is 172.16.0.100 to 172.16.0.200 with a /24 subnet mask. For the purposes of the lab, the lease time is left at 8 days.  
+
+![image](https://github.com/user-attachments/assets/7fe820f8-aba2-4238-9ca7-6f9fe1527074)
+
+The default gateway will be the IP address of the DC: 172.16.0.1.
+
+<b>Step 5. Create Active Directory Users</b>
+
+A PowerShell script was used to create test usernames. The script takes a list of randomly generated first and last names and creates a new username and password.
+
+Credit to Josh Madakor for creating the script. 
+![powershell script](https://github.com/user-attachments/assets/76f9adbc-a373-4fc7-93ef-5b0761f658c6)
+
+Once the script is complete we can verify the users were added.
+![AD Users](https://github.com/user-attachments/assets/17050a6f-4bb3-41c3-b248-151268df13d7)
+
+Step 6. Create Windows 10 client VM
+
+The VM set up process is the same as the server set up in step one, except using a Windows 10 ISO
+![CLIENT1 VM SET-UP](https://github.com/user-attachments/assets/5d002ff6-ad39-488b-99cd-e581f945ca28)
+![Installing Windows CLIENT1](https://github.com/user-attachments/assets/b52bf8cb-6237-4087-b96c-d28104d9cfec)
 
 
 
