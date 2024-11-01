@@ -92,6 +92,29 @@ The VM set up process is the same as the server set up in step one, except using
 ![CLIENT1 VM SET-UP](https://github.com/user-attachments/assets/5d002ff6-ad39-488b-99cd-e581f945ca28)
 ![Installing Windows CLIENT1](https://github.com/user-attachments/assets/b52bf8cb-6237-4087-b96c-d28104d9cfec)
 
+For the Network Adapter, the Internal Network will be selected. This will allow the client machine to be assigned an IP address from the DHCP server, giving access to the local network and internet. 
+![DC Internal Network](https://github.com/user-attachments/assets/61c964f2-5a58-484e-9af8-2133984cc5e4)
+
+<b>Step 7. Verify Client Machine Connection</b>
+The last step will be to verify 1) we can log on to the network using one of the user id's created in Active Directory 2) the client machine has been assigned an IP address and can connect to the internet.
+
+The client user login works and we can see there is a connection to the DC network (mydomain.com)
+![CLIENT1 - Desktop](https://github.com/user-attachments/assets/a7779868-4792-4860-9415-3a41a1c2245b)
+
+We can also open the terminal and use the ipconfig command. The output shows the client was assigned an IP address of 172.16.0.100 and the default gateway for the machine is the ip address of the DC.
+![Client - ipconfig](https://github.com/user-attachments/assets/59785e42-5e32-4e09-9562-0f35b647246c)
+
+To test the connection we the ping a couple of IP addresses. The first test is the DC IP address of 172.16.0.1. The second ping test is for a public IP address. 9.9.9.9. Both tests work the which confirms our connection is working as expected. 
+![ping 9 9 9 9](https://github.com/user-attachments/assets/176e7031-e59e-4771-8f73-07e1aabcf119)
+
+One last thing we can do is take a look at the DHCP reservations on the DC machine. We can see below the IP address assigned to client machine and the lease expiration on 11/9/24. 
+![DHCP lease](https://github.com/user-attachments/assets/03132156-9bd7-4b5a-8075-e5607abb2af8)
+![ping dc](https://github.com/user-attachments/assets/a0c7ca3e-bf2b-45b4-aedb-c7c73e5c9ed0)
+
+<b>Step 8. Add Client to domain</b>
+Our final step will be to rename the computer to CLIENT1 and make it a member of mydomain.com
+![CLIENT1 rename](https://github.com/user-attachments/assets/6627a628-68fb-461e-9624-4971326b99f0)
+
 
 
 <p align="center">
