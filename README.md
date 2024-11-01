@@ -100,7 +100,8 @@ For the Network Adapter, the Internal Network will be selected. This will allow 
 ![DC Internal Network](https://github.com/user-attachments/assets/61c964f2-5a58-484e-9af8-2133984cc5e4)
 
 <b>Step 7. Verify Client Machine Connection</b>
-The last step will be to verify 1) we can log on to the network using one of the user id's created in Active Directory 2) the client machine has been assigned an IP address and can connect to the internet.
+
+The next step will be to verify 1) we can log on to the network using one of the user id's created in Active Directory 2) the client machine has been assigned an IP address and can connect to the internet.
 
 The client user login works and we can see there is a connection to the DC network (mydomain.com)
 
