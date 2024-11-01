@@ -86,7 +86,7 @@ Credit to Josh Madakor for creating the script.
 Once the script is complete we can verify the users were added.
 ![AD Users](https://github.com/user-attachments/assets/17050a6f-4bb3-41c3-b248-151268df13d7)
 
-Step 6. Create Windows 10 client VM
+<b>Step 6. Create Windows 10 client VM</b>
 
 The VM set up process is the same as the server set up in step one, except using a Windows 10 ISO
 ![CLIENT1 VM SET-UP](https://github.com/user-attachments/assets/5d002ff6-ad39-488b-99cd-e581f945ca28)
@@ -107,44 +107,20 @@ We can also open the terminal and use the ipconfig command. The output shows the
 To test the connection we the ping a couple of IP addresses. The first test is the DC IP address of 172.16.0.1. The second ping test is for a public IP address. 9.9.9.9. Both tests work the which confirms our connection is working as expected. 
 ![ping 9 9 9 9](https://github.com/user-attachments/assets/176e7031-e59e-4771-8f73-07e1aabcf119)
 
+<b>Step 8. Add Client to domain</b>
+Our final step will be to rename the computer to CLIENT1 and make it a member of mydomain.com. This will allow any user listed in Active Directory to log into the network with this machine.
+![CLIENT1 rename](https://github.com/user-attachments/assets/6627a628-68fb-461e-9624-4971326b99f0)
+
+<b>Step 9. Check DHCP/Active Directory settings on DC</b>
+
 One last thing we can do is take a look at the DHCP reservations on the DC machine. We can see below the IP address assigned to client machine and the lease expiration on 11/9/24. 
 ![DHCP lease](https://github.com/user-attachments/assets/03132156-9bd7-4b5a-8075-e5607abb2af8)
 ![ping dc](https://github.com/user-attachments/assets/a0c7ca3e-bf2b-45b4-aedb-c7c73e5c9ed0)
 
-<b>Step 8. Add Client to domain</b>
-Our final step will be to rename the computer to CLIENT1 and make it a member of mydomain.com
-![CLIENT1 rename](https://github.com/user-attachments/assets/6627a628-68fb-461e-9624-4971326b99f0)
+Lastly, under the AD settings we see the CLIENT1 computer is part of the mydomain.com domain. 
 
-
-
-<p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+<b>Final Observations</b>
+Overall this lab is a great hands on way to get familiar with Windows server, IP addressing, setting up a small network, and using Active Directory.   
 
 <!--
  ```diff
