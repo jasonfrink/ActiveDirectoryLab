@@ -13,6 +13,10 @@ Credit to Josh Madakor for creating the lab [tutorial](https://youtu.be/MHsI8hJm
 - <b>Windows Server 2019</b>
 - <b>Oracle VM VirtualBox</b>
 
+<h2>Network Diagram</h2>
+
+![Active Directory Home Lab](https://github.com/user-attachments/assets/4f19b327-a89a-4dc5-b85a-7d277940785e)
+
 <h2>Lab walk-through:</h2>
 
 <b>Step 1. Set up Environments</b>
